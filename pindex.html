@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="pstyles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="logo"><a href="/"><img src="images/logo.png"></a></div>
+            <div class="title"><h1>From Love, With Love</h1></div>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="aindex.html">About us</a></li>
+                <li><a class="products" href="pindex.html">Products</a></li>
+                <li><a href="cindex.html">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="products_container">
+            <div class="products_items" id="hovers">
+                    <img src="images/p1.png">
+                <div>
+                    <p id="song_title">Backburner</p>
+                </div>
+                <div class="lyrics">
+                        <audio id="song1">
+                            <source src="musics/song1.mp3" type="audio/mp3">
+                        </audio>
+                </div>
+            </div>
+            <div class="products_items" id="hovers2">
+                <img src="images/p2.png">
+                <div>
+                    <p id="song_title">Bawat Daan</p>
+                </div>
+                <div class="lyrics">
+                        <audio id="song2">
+                            <source src="musics/song2.mp3" type="audio/mp3">
+                        </audio>
+                </div>
+            </div>
+            <div class="products_items" id="hovers3">
+                    <img src="images/p3.png">
+                <div>
+                    <p id="song_title">Bawat Piyesa</p>
+                </div>
+                <div class="lyrics">
+                        <audio id="song3">
+                            <source src="musics/song3.mp3" type="audio/mp3">
+                        </audio>
+                </div>
+            </div>
+            <div class="products_items" id="hovers4">
+                <img src="images/p4.png">
+                <div>
+                    <p id="song_title">Burnout</p>
+                </div>
+                <div class="lyrics">
+                        <audio id="song4">
+                            <source src="musics/song4.mp3" type="audio/mp3">
+                        </audio>
+                </div>
+            </div>
+            <div class="products_items" id="hovers5">
+                <img src="images/p5.png">
+                <div>
+                    <p id="song_title">Die with a smile</p>
+                </div>
+                <div class="lyrics">
+                        <audio id="song5">
+                            <source src="musics/song5.mp3" type="audio/mp3">
+                        </audio>
+                </div>
+            </div>
+            <div class="products_items" id="hovers6">
+                <img src="images/p6.png">
+                <div>
+                    <p id="song_title">Falling for you</p>
+                </div>
+                <div class="lyrics">
+                        <audio id="song6">
+                            <source src="musics/song6.mp3" type="audio/mp3">
+                        </audio>
+                </div>
+            </div>
+            <div class="products_items" id="hovers7">
+                <img src="images/p7.png">
+                <div>
+                    <p id="song_title">I Like U</p>
+                </div>
+                <div class="lyrics">
+                        <audio id="song7">
+                            <source src="musics/song7.mp3" type="audio/mp3">
+                        </audio>
+                </div>
+            </div>
+            <div class="products_items" id="hovers8">
+                <img src="images/p8.png">
+                <div>
+                    <p id="song_title">Long Live</p>
+                </div>
+                <div class="lyrics">
+                        <audio id="song8">
+                            <source src="musics/song8.mp3" type="audio/mp3">
+                        </audio>
+                </div>
+            </div>
+            <div class="products_items" id="hovers9">
+                <img src="images/p9.png">
+                <div>
+                    <p id="song_title">Love</p>
+                </div>
+                <div class="lyrics">
+
+                        <audio id="song9">
+                            <source src="musics/song9.mp3" type="audio/mp3">
+                        </audio>
+                </div>
+            </div>
+            <div class="products_items" id="hovers10">
+                <img src="images/p10.png">
+                <div>
+                    <p id="song_title">Lover</p>
+                </div>
+                <div class="lyrics">
+                        <audio id="song10">
+                            <source src="musics/song10.mp3" type="audio/mp3">
+                        </audio>
+                </div>
+            </div>
+            <div class="products_items" id="hovers11">
+                <img src="images/p11.png">
+                <div>
+                    <p id="song_title">Seasons</p>
+                </div>
+                <div class="lyrics">
+                        <audio id="song11">
+                            <source src="musics/song11.mp3" type="audio/mp3">
+                        </audio>
+                </div>
+                </div>
+            </div>
+
+            <div class="footer">
+            <p>
+                "DISCLAIMER: I hereby declare that I do not own the rights to this music. All rights belong to the owner. 
+                No Copyright Infringement Intended". 
+            </p>
+        </div>
+        </div>
+        
+    </div>
+
+    <script>
+        const hovers = document.getElementById("hovers");
+        const song1 = document.getElementById("song1");
+
+        hovers.addEventListener("mouseenter" , () => {
+            song1.play();});
+        hovers.addEventListener("mouseleave" , () => {
+            song1.pause();
+            song1.currentTime = 0;
+        });
+
+    </script>
+
+    <script>
+        const hovers2 = document.getElementById("hovers2");
+        const song2 = document.getElementById("song2");
+
+        hovers2.addEventListener("mouseenter" , () => {
+            song2.play();});
+        hovers2.addEventListener("mouseleave" , () => {
+            song2.pause();
+            song2.currentTime = 0;
+        });
+    </script>
+
+    <script>
+        const hovers3 = document.getElementById("hovers3");
+        const song3 = document.getElementById("song3");
+
+        hovers3.addEventListener("mouseenter" , () => {
+            song3.play();});
+        hovers3.addEventListener("mouseleave" , () => {
+            song3.pause();
+            song3.currentTime = 0;
+        });
+    </script>
+
+    <script>
+        const hovers4 = document.getElementById("hovers4");
+        const song4 = document.getElementById("song4");
+
+        hovers4.addEventListener("mouseenter" , () => {
+            song4.play();});
+        hovers4.addEventListener("mouseleave" , () => {
+            song4.pause();
+            song4.currentTime = 0;
+        });
+    </script>
+
+    <script>
+        const hovers5 = document.getElementById("hovers5");
+        const song5 = document.getElementById("song5");
+
+        hovers5.addEventListener("mouseenter" , () => {
+            song5.play();});
+        hovers5.addEventListener("mouseleave" , () => {
+            song5.pause();
+            song5.currentTime = 0;
+        });
+    </script>
+
+    <script>
+        const hovers6 = document.getElementById("hovers6");
+        const song6 = document.getElementById("song6");
+
+        hovers6.addEventListener("mouseenter" , () => {
+            song6.play();});
+        hovers6.addEventListener("mouseleave" , () => {
+            song6.pause();
+            song6.currentTime = 0;
+        });
+    </script>
+
+    <script>
+        const hovers7 = document.getElementById("hovers7");
+        const song7 = document.getElementById("song7");
+
+        hovers7.addEventListener("mouseenter" , () => {
+            song7.play();});
+        hovers7.addEventListener("mouseleave" , () => {
+            song7.pause();
+            song7.currentTime = 0;
+        });
+    </script>
+
+    <script>
+        const hovers8 = document.getElementById("hovers8");
+        const song8 = document.getElementById("song8");
+
+        hovers8.addEventListener("mouseenter" , () => {
+            song8.play();});
+        hovers8.addEventListener("mouseleave" , () => {
+            song8.pause();
+            song8.currentTime = 0;
+        });
+    </script>
+
+    <script>
+        const hovers9 = document.getElementById("hovers9");
+        const song9 = document.getElementById("song9");
+
+        hovers9.addEventListener("mouseenter" , () => {
+            song9.play();});
+        hovers9.addEventListener("mouseleave" , () => {
+            song9.pause();
+            song9.currentTime = 0;
+        });
+    </script>
+
+    <script>
+        const hovers10 = document.getElementById("hovers10");
+        const song10 = document.getElementById("song10");
+
+        hovers10.addEventListener("mouseenter" , () => {
+            song10.play();});
+        hovers10.addEventListener("mouseleave" , () => {
+            song10.pause();
+            song10.currentTime = 0;
+        });
+    </script>
+
+    <script>
+        const hovers11 = document.getElementById("hovers11");
+        const song11 = document.getElementById("song11");
+
+        hovers11.addEventListener("mouseenter" , () => {
+            song11.play();});
+        hovers11.addEventListener("mouseleave" , () => {
+            song11.pause();
+            song11.currentTime = 0;
+        });
+    </script>
+    
+</body>
+</html>
