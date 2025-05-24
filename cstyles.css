@@ -108,7 +108,7 @@
 .remarks{
     margin-top: 200px;
 }
-.remarks{
+.remarks p{
     text-align: center;
     font-family: "Sour Gummy", sans-serif;
     font-weight: bold;
